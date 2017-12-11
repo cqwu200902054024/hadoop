@@ -1,4 +1,4 @@
-package parquet;
+package net.cqwu.parquet;
 
 import java.io.IOException;
 

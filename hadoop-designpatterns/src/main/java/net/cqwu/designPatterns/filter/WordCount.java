@@ -1,4 +1,4 @@
-package designPatterns.filter;
+package net.cqwu.designPatterns.filter;
 
 import java.io.IOException;
 

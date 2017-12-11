@@ -1,4 +1,4 @@
-package parquet;
+package net.cqwu.parquet;
 
 import java.io.IOException;
 
@@ -16,7 +16,7 @@ import org.apache.parquet.schema.MessageTypeParser;
 
 /**
  *
- * Parquet µÄ¶ÁÐ´²âÊÔ
+ * Parquet ï¿½Ä¶ï¿½Ð´ï¿½ï¿½ï¿½ï¿½
  * Created by p.z on 2017/11/6 0006.
  */
 public class ParquetTest {
@@ -37,7 +37,7 @@ public class ParquetTest {
 
             System.out.println(time.getString("ttl2", 0));
 
-            // Í¨¹ýÏÂ±êºÍ×Ö¶ÎÃû³Æ»ñÈ¡
+            // Í¨ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½Æ»ï¿½È¡
 
             /*
              *      System.out.println("city: " + line.getString(0,0) + "\t" +
