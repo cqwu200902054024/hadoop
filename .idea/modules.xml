@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/hadoop.iml" filepath="$PROJECT_DIR$/hadoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/hadoop-avro/hadoop-avro.iml" filepath="$PROJECT_DIR$/hadoop-avro/hadoop-avro.iml" />
       <module fileurl="file://$PROJECT_DIR$/hadoop-designpatterns/hadoop-designpatterns.iml" filepath="$PROJECT_DIR$/hadoop-designpatterns/hadoop-designpatterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hadoop-hdfs/hadoop-hdfs.iml" filepath="$PROJECT_DIR$/hadoop-hdfs/hadoop-hdfs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hadoop-hive/hadoop-hive.iml" filepath="$PROJECT_DIR$/hadoop-hive/hadoop-hive.iml" />
       <module fileurl="file://$PROJECT_DIR$/hadoop-parquet/hadoop-parquet.iml" filepath="$PROJECT_DIR$/hadoop-parquet/hadoop-parquet.iml" />
     </modules>
   </component>

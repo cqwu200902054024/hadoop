@@ -12,6 +12,8 @@
         <module>hadoop-avro</module>
         <module>hadoop-parquet</module>
         <module>hadoop-designpatterns</module>
+        <module>hadoop-hive</module>
+        <module>hadoop-hdfs</module>
     </modules>
 
 

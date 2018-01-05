@@ -16,9 +16,9 @@ import org.apache.hadoop.mapreduce.Mapper;
  * Comments:
  * JDK version used:      JDK1.8
  * Namespace:           net.cqwu.wordcount
- * Author£º             Administrator
- * Create Date£º  2017-12-08
- * Modified By£º   Administrator
+ * Authorï¿½ï¿½             Administrator
+ * Create Dateï¿½ï¿½  2017-12-08
+ * Modified Byï¿½ï¿½   Administrator
  * Modified Date:  2017-12-08
  * Why & What is modified
  * Version:        V1.0
@@ -32,11 +32,11 @@ public class WordCountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
         StringTokenizer tokenizer = new StringTokenizer(value.toString());
 
         while (tokenizer.hasMoreTokens()) {
-            this.outKey.set(tokenizer.nextToken());
+            String str = tokenizer.nextToken();
+            this.outKey.set(str);
             context.write(this.outKey, ONE);
+            /*this.outKey.set(str + "test");
+            context.write(this.outKey, ONE);*/
         }
     }
 }
-
-
-//~ Formatted by Jindent --- http://www.jindent.com

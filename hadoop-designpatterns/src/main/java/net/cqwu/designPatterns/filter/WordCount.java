@@ -26,7 +26,7 @@ import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
 /**
- * Created by Administrator on 2017/5/18 0018.
+ * Created by p.z on 2017/5/18 0018.
  */
 public class WordCount extends Configured implements Tool {
     enum MyCounter { COUNTERA, COUNTERB }
@@ -164,7 +164,9 @@ public class WordCount extends Configured implements Tool {
         }
 
         @Override
-        protected void setup(Context context) throws IOException, InterruptedException {}
+        protected void setup(Context context) throws IOException, InterruptedException {
+
+        }
     }
 }    ////
 

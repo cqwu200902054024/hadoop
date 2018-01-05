@@ -1,6 +1,8 @@
 package net.cqwu.wordcount;
 
+import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -18,9 +20,9 @@ import org.apache.hadoop.util.ToolRunner;
  * Comments:
  * JDK version used:      JDK1.8
  * Namespace:           net.cqwu.wordcount
- * Author£º             Administrator
- * Create Date£º  2017-12-08
- * Modified By£º   Administrator
+ * @Author           p.z
+ * Create Date  2017-12-08
+ * Modified By   Administrator
  * Modified Date:  2017-12-08
  * Why & What is modified
  * Version:        V1.0
@@ -40,7 +42,8 @@ public class WordCount extends Configured implements Tool {
 
     @Override
     public int run(String[] args) throws Exception {
-        Job job = Job.getInstance(getConf());
+        Configuration configuration = getConf();
+        Job job = Job.getInstance(configuration);
 
         job.setJarByClass(WordCount.class);
         job.setJobName(this.getClass().getSimpleName());
@@ -50,14 +53,15 @@ public class WordCount extends Configured implements Tool {
         job.setOutputValueClass(IntWritable.class);
         job.setCombinerClass(WordCountReducer.class);
         job.setInputFormatClass(TextInputFormat.class);
+
+        Path out =  new Path("D:\\data\\out\\test");
+        FileSystem fs = FileSystem.get(configuration);
+        fs.delete(out, true);
         FileInputFormat.setInputPaths(job, new Path("D:\\data\\in\\test"));
-        FileOutputFormat.setOutputPath(job, new Path("D:\\data\\out\\test"));
+        FileOutputFormat.setOutputPath(job,out);
 
         return job.waitForCompletion(true)
                ? 0
                : 1;
     }
 }
-
-
-//~ Formatted by Jindent --- http://www.jindent.com
