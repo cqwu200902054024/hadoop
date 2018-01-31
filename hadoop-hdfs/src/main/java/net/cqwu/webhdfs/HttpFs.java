@@ -7,6 +7,8 @@ import org.apache.hadoop.hdfs.web.WebHdfsFileSystem;
 import org.apache.hadoop.security.UserGroupInformation;
 
 import java.net.URI;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * CopyRright (c)2018-0000:   net.cqwu
@@ -29,10 +31,11 @@ public class HttpFs {
         //UserGroupInformation.createRemoteUser("hadoop");
         WebHdfsFileSystem webHdfsFileSystem = new WebHdfsFileSystem();
         try {
+            //List
             webHdfsFileSystem.initialize(new URI("http://222.186.30.56:14000"), configuration);
             System.out.println(webHdfsFileSystem.getUri());
             //向HDFS Put文件
-           // webHdfsFileSystem.copyFromLocalFile(new Path("/Users/fayson/Desktop/run-kafka/"), new Path("/fayson1-httpfs"));
+            // webHdfsFileSystem.copyFromLocalFile(new Path("/Users/fayson/Desktop/run-kafka/"), new Path("/fayson1-httpfs"));
             //列出HDFS根目录下的所有文件
             FileStatus[] fileStatuses =  webHdfsFileSystem.listStatus(new Path("/hive"));
             for (FileStatus fileStatus : fileStatuses) {
