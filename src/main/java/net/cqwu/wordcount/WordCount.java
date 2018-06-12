@@ -7,6 +7,7 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.Partitioner;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
@@ -59,7 +60,7 @@ public class WordCount extends Configured implements Tool {
         fs.delete(out, true);
         FileInputFormat.setInputPaths(job, new Path("D:\\data\\in\\test"));
         FileOutputFormat.setOutputPath(job,out);
-
+        //
         return job.waitForCompletion(true)
                ? 0
                : 1;

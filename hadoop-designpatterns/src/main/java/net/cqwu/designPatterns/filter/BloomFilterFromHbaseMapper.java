@@ -28,8 +28,6 @@ public class BloomFilterFromHbaseMapper extends Mapper<Object, Text, Text, NullW
         String idcard = value.toString().split("\t")[0];
 
         if (bloomFilter.membershipTest(new Key(idcard.getBytes()))) {
-
-            //
             // xueshengs
         }
     }    ////364944 +
@@ -46,7 +44,7 @@ public class BloomFilterFromHbaseMapper extends Mapper<Object, Text, Text, NullW
 
         this.htable = new HTable(hconf, "");
     }
-}    //
+}
 
 
 //~ Formatted by Jindent --- http://www.jindent.com

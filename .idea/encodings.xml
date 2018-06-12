@@ -2,10 +2,18 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-flume" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-zookeeper" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hadoop-avro" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hadoop-cdh" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hadoop-data-algorithms" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hadoop-designpatterns" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hadoop-hbase" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hadoop-hdfs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hadoop-hive" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hadoop-mapreduce" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hadoop-mooncloud" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hadoop-parquet" charset="UTF-8" />
   </component>
 </project>

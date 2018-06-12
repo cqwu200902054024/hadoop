@@ -6,20 +6,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="apache-flume" />
+        <module name="apache-kafka" />
+        <module name="apache-zookeeper" />
         <module name="hadoop-avro" />
+        <module name="hadoop-data-algorithms" />
         <module name="hadoop-designpatterns" />
+        <module name="hadoop-hbase" />
         <module name="hadoop-hdfs" />
         <module name="hadoop-hive" />
+        <module name="hadoop-mapreduce" />
+        <module name="hadoop-mooncloud" />
         <module name="hadoop-parquet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="apache-flume" target="1.8" />
+      <module name="apache-kafka" target="1.8" />
+      <module name="apache-zookeeper" target="1.8" />
       <module name="hadoop" target="1.8" />
       <module name="hadoop-avro" target="1.8" />
+      <module name="hadoop-data-algorithms" target="1.8" />
       <module name="hadoop-designpatterns" target="1.8" />
+      <module name="hadoop-hbase" target="1.8" />
       <module name="hadoop-hdfs" target="1.8" />
       <module name="hadoop-hive" target="1.8" />
+      <module name="hadoop-mapreduce" target="1.8" />
+      <module name="hadoop-mooncloud" target="1.8" />
       <module name="hadoop-parquet" target="1.8" />
+      <module name="hadoopcdh" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

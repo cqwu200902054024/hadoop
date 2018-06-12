@@ -14,6 +14,14 @@
         <module>hadoop-designpatterns</module>
         <module>hadoop-hive</module>
         <module>hadoop-hdfs</module>
+        <module>hadoop-cdh</module>
+        <module>hadoop-mapreduce</module>
+        <module>hadoop-mooncloud</module>
+        <module>hadoop-data-algorithms</module>
+        <module>apache-flume</module>
+        <module>hadoop-hbase</module>
+        <module>apache-kafka</module>
+        <module>apache-zookeeper</module>
     </modules>
 
 
@@ -23,6 +31,13 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>cloudera</id>
+            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <!-- hdfs -->

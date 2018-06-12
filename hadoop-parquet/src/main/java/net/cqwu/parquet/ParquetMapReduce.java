@@ -117,17 +117,13 @@ public class ParquetMapReduce extends Configured implements Tool {
         }
     }
 
-
     public static class ParquetReducer extends Reducer<Text, Text, Text, Text> {
         @Override
         protected void reduce(Text key, Iterable<Text> values, Context context)
                 throws IOException, InterruptedException {
             for (Text value : values) {
                 context.write(key, value);
-            }
-        }
+            }//
+        }//
     }
 }
-
-
-//~ Formatted by Jindent --- http://www.jindent.com

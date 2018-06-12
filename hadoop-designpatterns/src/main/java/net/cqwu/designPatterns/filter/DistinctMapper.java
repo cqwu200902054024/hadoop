@@ -16,11 +16,7 @@ public class DistinctMapper extends Mapper<LongWritable, Text, Text, NullWritabl
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String host = value.toString().split("\t")[25];
-
         this.hostSer.set(host);
-        context.write(this.hostSer, NullWritable.get());    //
+        context.write(this.hostSer, NullWritable.get());
     }
 }
-
-
-//~ Formatted by Jindent --- http://www.jindent.com

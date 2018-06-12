@@ -35,6 +35,3 @@ public class TopKReducer extends Reducer<NullWritable, Text, NullWritable, Text>
         }
     }
 }
-
-
-//~ Formatted by Jindent --- http://www.jindent.com
