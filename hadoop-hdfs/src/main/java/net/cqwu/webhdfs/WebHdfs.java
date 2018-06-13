@@ -27,9 +27,6 @@ import java.net.URI;
  * Version:        V1.0
  */
 public class WebHdfs{
-
-
-
     public static void main(String[] args) throws Exception{
         Configuration configuration = new Configuration();
         WebHdfsFileSystem webHdfsFileSystem = new WebHdfsFileSystem();
