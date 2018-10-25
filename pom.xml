@@ -23,6 +23,8 @@
         <module>apache-kafka</module>
         <module>apache-zookeeper</module>
         <module>hadoop-kafka-consumer</module>
+        <module>apache-kafka</module>
+        <module>apache-flume</module>
     </modules>
 
 
