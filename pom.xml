@@ -22,6 +22,7 @@
         <module>hadoop-hbase</module>
         <module>apache-kafka</module>
         <module>apache-zookeeper</module>
+        <module>hadoop-kafka-consumer</module>
     </modules>
 
 
