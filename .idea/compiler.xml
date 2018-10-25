@@ -19,7 +19,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="apache-flume" target="1.7" />
+      <module name="apache-flume" target="1.8" />
       <module name="apache-kafka" target="1.8" />
       <module name="apache-zookeeper" target="1.8" />
       <module name="hadoop" target="1.8" />
